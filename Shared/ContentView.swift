@@ -7,10 +7,27 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct ContentView: View {    
+    @State var snacks: [Article] = []
+
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        NavigationView {
+            List {
+                ForEach(snacks, id: \.self) { article in
+                    Text(article.title ?? "No Title")
+                }
+            }
+            
+            .navigationTitle("Snacks")
+        }.onAppear {
+            guard let url = URL(string: "https://api.lil.software/news") else { return }
+            let task = URLSession.shared.infoResponseTask(with: url) { infoResponse, response, error in
+                if let infoResponse = infoResponse {
+                    self.snacks = infoResponse.articles ?? []
+                }
+            }
+            task.resume()
+        }
     }
 }
 

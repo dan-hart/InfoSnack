@@ -15,6 +15,10 @@
 		522250E92655B47900A52280 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522250BE2655B47900A52280 /* ContentView.swift */; };
 		522250EA2655B47900A52280 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 522250BF2655B47900A52280 /* Assets.xcassets */; };
 		522250EB2655B47900A52280 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 522250BF2655B47900A52280 /* Assets.xcassets */; };
+		522250FB2655B54C00A52280 /* InfoResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522250FA2655B54C00A52280 /* InfoResponse.swift */; };
+		522250FC2655B54C00A52280 /* InfoResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522250FA2655B54C00A52280 /* InfoResponse.swift */; };
+		522250FE2655B65000A52280 /* SnackManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522250FD2655B65000A52280 /* SnackManager.swift */; };
+		522250FF2655B65000A52280 /* SnackManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522250FD2655B65000A52280 /* SnackManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +53,8 @@
 		522250DF2655B47900A52280 /* Tests macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		522250E32655B47900A52280 /* Tests_macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOS.swift; sourceTree = "<group>"; };
 		522250E52655B47900A52280 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		522250FA2655B54C00A52280 /* InfoResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoResponse.swift; sourceTree = "<group>"; };
+		522250FD2655B65000A52280 /* SnackManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnackManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +106,8 @@
 			children = (
 				522250BD2655B47900A52280 /* InfoSnackApp.swift */,
 				522250BE2655B47900A52280 /* ContentView.swift */,
+				522250FD2655B65000A52280 /* SnackManager.swift */,
+				522250FA2655B54C00A52280 /* InfoResponse.swift */,
 				522250BF2655B47900A52280 /* Assets.xcassets */,
 			);
 			path = Shared;
@@ -308,8 +316,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				522250FE2655B65000A52280 /* SnackManager.swift in Sources */,
 				522250E82655B47900A52280 /* ContentView.swift in Sources */,
 				522250E62655B47900A52280 /* InfoSnackApp.swift in Sources */,
+				522250FB2655B54C00A52280 /* InfoResponse.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -317,8 +327,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				522250FF2655B65000A52280 /* SnackManager.swift in Sources */,
 				522250E92655B47900A52280 /* ContentView.swift in Sources */,
 				522250E72655B47900A52280 /* InfoSnackApp.swift in Sources */,
+				522250FC2655B54C00A52280 /* InfoResponse.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
