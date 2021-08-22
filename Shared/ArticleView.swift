@@ -12,19 +12,24 @@ struct ArticleView: View {
     
     var body: some View {
         VStack(alignment: .leading) {
-            Text(article.title ?? "")
-                .font(.largeTitle)
+            VStack(alignment: .leading) {
             Text(article.author ?? "")
-                .font(.title2)
+                .font(.title)
             Text(article.source ?? "")
                 .font(.subheadline)
-            Spacer()
+            }
+            .padding(.bottom)
+            
+            Text(article.title ?? "")
+                .bold()
+                .padding(.bottom)
             Text(article.articleDescription ?? "")
+                .italic()
+                .padding(.bottom)
+            Link("Read Full Article", destination: URL(string: article.url ?? "") ?? URL(fileURLWithPath: ""))
             Spacer()
         }
         .padding()
-        
-            .navigationTitle(article.title ?? "")
     }
 }
 
