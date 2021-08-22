@@ -18,8 +18,7 @@ struct ContentView: View {
                         NavigationLink(
                             destination: ArticleView(article: article),
                             label: {
-                                Text(article.title ?? "No Title")
-                                    .font(.title2)
+                                ArticleRowView(article: article)
                             })
                     }
                 }
@@ -44,6 +43,6 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView(snacks: [])
+        ContentView(snacks: [Article.steveJobsMockArticle])
     }
 }

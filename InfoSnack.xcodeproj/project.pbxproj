@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5203AF6426D1D77000A45167 /* ArticleRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5203AF6326D1D77000A45167 /* ArticleRowView.swift */; };
+		5203AF6526D1D77000A45167 /* ArticleRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5203AF6326D1D77000A45167 /* ArticleRowView.swift */; };
 		520D690326D1CEEF000C3945 /* ArticleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 520D690226D1CEEF000C3945 /* ArticleView.swift */; };
 		520D690426D1CEEF000C3945 /* ArticleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 520D690226D1CEEF000C3945 /* ArticleView.swift */; };
 		522250D92655B47900A52280 /* Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522250D82655B47900A52280 /* Tests_iOS.swift */; };
@@ -39,6 +41,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5203AF6326D1D77000A45167 /* ArticleRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleRowView.swift; sourceTree = "<group>"; };
 		520D690226D1CEEF000C3945 /* ArticleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleView.swift; sourceTree = "<group>"; };
 		522250BD2655B47900A52280 /* InfoSnackApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoSnackApp.swift; sourceTree = "<group>"; };
 		522250BE2655B47900A52280 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -89,6 +92,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5203AF6126D1D3AD00A45167 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				522250BE2655B47900A52280 /* ContentView.swift */,
+				5203AF6326D1D77000A45167 /* ArticleRowView.swift */,
+				520D690226D1CEEF000C3945 /* ArticleView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		5203AF6226D1D3B600A45167 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				522250FA2655B54C00A52280 /* InfoResponse.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		522250B72655B47800A52280 = {
 			isa = PBXGroup;
 			children = (
@@ -104,10 +125,9 @@
 		522250BC2655B47900A52280 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				5203AF6226D1D3B600A45167 /* Models */,
+				5203AF6126D1D3AD00A45167 /* Views */,
 				522250BD2655B47900A52280 /* InfoSnackApp.swift */,
-				522250BE2655B47900A52280 /* ContentView.swift */,
-				520D690226D1CEEF000C3945 /* ArticleView.swift */,
-				522250FA2655B54C00A52280 /* InfoResponse.swift */,
 				522250BF2655B47900A52280 /* Assets.xcassets */,
 			);
 			path = Shared;
@@ -317,6 +337,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				522250E82655B47900A52280 /* ContentView.swift in Sources */,
+				5203AF6426D1D77000A45167 /* ArticleRowView.swift in Sources */,
 				522250E62655B47900A52280 /* InfoSnackApp.swift in Sources */,
 				522250FB2655B54C00A52280 /* InfoResponse.swift in Sources */,
 				520D690326D1CEEF000C3945 /* ArticleView.swift in Sources */,
@@ -328,6 +349,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				522250E92655B47900A52280 /* ContentView.swift in Sources */,
+				5203AF6526D1D77000A45167 /* ArticleRowView.swift in Sources */,
 				522250E72655B47900A52280 /* InfoSnackApp.swift in Sources */,
 				522250FC2655B54C00A52280 /* InfoResponse.swift in Sources */,
 				520D690426D1CEEF000C3945 /* ArticleView.swift in Sources */,
@@ -417,6 +439,8 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MACOSX_DEPLOYMENT_TARGET = 11.5;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -470,6 +494,8 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MACOSX_DEPLOYMENT_TARGET = 11.5;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SWIFT_COMPILATION_MODE = wholemodule;
