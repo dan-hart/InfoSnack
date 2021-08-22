@@ -12,7 +12,7 @@ struct ArticleRowView: View {
     
     var body: some View {
         HStack {
-            if #available(iOS 15.0, *) {
+            if #available(iOS 15.0, *), #available(macOS 12.0, *) {
                 AsyncImage(url: URL(string: article.image ?? "") ?? URL(fileURLWithPath: "")) { phase in
                     switch phase {
                     case .success(let image):

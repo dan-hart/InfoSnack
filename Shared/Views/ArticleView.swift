@@ -9,11 +9,10 @@ import SwiftUI
 
 struct ArticleView: View {
     @State var article: Article
-    var image: Image?
     
     var body: some View {
         VStack(alignment: .leading) {
-            if #available(iOS 15.0, *) {
+            if #available(iOS 15.0, *), #available(macOS 12.0, *)  {
                 AsyncImage(url: URL(string: article.image ?? "") ?? URL(fileURLWithPath: "")) { image in
                     image
                         .resizable()
