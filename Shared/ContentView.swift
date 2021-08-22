@@ -15,8 +15,12 @@ struct ContentView: View {
             if let snacks = snacks {
                 List {
                     ForEach(snacks, id: \.self) { article in
-                        Text(article.title ?? "No Title")
-                            .font(.title2)
+                        NavigationLink(
+                            destination: ArticleView(article: article),
+                            label: {
+                                Text(article.title ?? "No Title")
+                                    .font(.title2)
+                            })
                     }
                 }
                 
@@ -40,6 +44,6 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        ContentView(snacks: [])
     }
 }

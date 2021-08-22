@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		520D690326D1CEEF000C3945 /* ArticleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 520D690226D1CEEF000C3945 /* ArticleView.swift */; };
+		520D690426D1CEEF000C3945 /* ArticleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 520D690226D1CEEF000C3945 /* ArticleView.swift */; };
 		522250D92655B47900A52280 /* Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522250D82655B47900A52280 /* Tests_iOS.swift */; };
 		522250E42655B47900A52280 /* Tests_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522250E32655B47900A52280 /* Tests_macOS.swift */; };
 		522250E62655B47900A52280 /* InfoSnackApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522250BD2655B47900A52280 /* InfoSnackApp.swift */; };
@@ -37,6 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		520D690226D1CEEF000C3945 /* ArticleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleView.swift; sourceTree = "<group>"; };
 		522250BD2655B47900A52280 /* InfoSnackApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoSnackApp.swift; sourceTree = "<group>"; };
 		522250BE2655B47900A52280 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		522250BF2655B47900A52280 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -103,6 +106,7 @@
 			children = (
 				522250BD2655B47900A52280 /* InfoSnackApp.swift */,
 				522250BE2655B47900A52280 /* ContentView.swift */,
+				520D690226D1CEEF000C3945 /* ArticleView.swift */,
 				522250FA2655B54C00A52280 /* InfoResponse.swift */,
 				522250BF2655B47900A52280 /* Assets.xcassets */,
 			);
@@ -315,6 +319,7 @@
 				522250E82655B47900A52280 /* ContentView.swift in Sources */,
 				522250E62655B47900A52280 /* InfoSnackApp.swift in Sources */,
 				522250FB2655B54C00A52280 /* InfoResponse.swift in Sources */,
+				520D690326D1CEEF000C3945 /* ArticleView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -325,6 +330,7 @@
 				522250E92655B47900A52280 /* ContentView.swift in Sources */,
 				522250E72655B47900A52280 /* InfoSnackApp.swift in Sources */,
 				522250FC2655B54C00A52280 /* InfoResponse.swift in Sources */,
+				520D690426D1CEEF000C3945 /* ArticleView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
