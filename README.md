@@ -1,6 +1,6 @@
 # InfoSnack
 
-[!["Buy Me A Coffee"](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://www.buymeacoffee.com/https://www.buymeacoffee.com/codedbydan)
+[!["Buy Me A Coffee"](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://www.buymeacoffee.com/codedbydan)
 
 iOS & macOS proof of concept for news with lil apis: https://lil.software/api/
 
